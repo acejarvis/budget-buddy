@@ -9,11 +9,15 @@ import { from } from 'rxjs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { MapComponent } from './map/map.component';
+import { ClusterChartComponent } from './cluster-chart/cluster-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MapComponent,
+    ClusterChartComponent
   ],
   imports: [
     BrowserModule,
