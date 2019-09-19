@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { AgmCoreModule } from '@agm/core';
 import { from } from 'rxjs';
 
 
@@ -29,7 +31,11 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
     BrowserAnimationsModule,
     NgApexchartsModule,
     FormsModule,
-    ReactiveFormsModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDtAOLte63fvHQd8HqVFEfi0eLek_MvuNg'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
