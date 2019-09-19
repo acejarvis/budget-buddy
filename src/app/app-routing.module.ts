@@ -6,9 +6,10 @@ import { ClusterChartComponent } from './cluster-chart/cluster-chart.component';
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'map', component: MapComponent },
-  { path: 'cluster', component: ClusterChartComponent }
+  { path: 'cluster', component: ClusterChartComponent },
 ];
 
 @NgModule({

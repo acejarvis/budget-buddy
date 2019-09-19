@@ -11,13 +11,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
 import { ClusterChartComponent } from './cluster-chart/cluster-chart.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MapComponent,
-    ClusterChartComponent
+    ClusterChartComponent,
+    FooterComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
